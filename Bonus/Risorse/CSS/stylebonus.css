@@ -1,0 +1,161 @@
+/****************************************/
+/*********** GENERAL STYLE ***********/
+
+:root {
+    --bgGrey: #2E2F32;
+    --bgBlue: #052555;
+    --padBox: 1em;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: .875rem;
+    background: rgb(10, 9, 15);
+    background: linear-gradient(145deg, rgba(10, 9, 15, 1) 0%, rgba(75, 23, 24, 1) 80%);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+/******** HEADER STYLE ********/
+header {
+    background-color: #09080f;
+    padding: 2rem .5rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+header img {
+    object-fit: cover;
+    width: 20%;
+}
+
+header i,
+header span:nth-child(3) {
+    font-size: .75rem;
+}
+
+/******** MAIN STYLE ********/
+main {
+    height: 100vh;
+    width: 100vw;
+    padding: var(--padBox);
+}
+
+.container {
+    max-width: 75rem;
+    margin: 1rem auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: var(--padBox);
+    margin: 0.8rem 0;
+}
+
+.container > .row div {
+    padding: var(--padBox);
+    color: antiquewhite;
+}
+
+[class*="col-"] {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: auto;
+}
+
+.col {
+    flex-grow: 1;
+    flex-basis: 0;
+    max-width: 100%;
+}
+
+.bgGrey {
+    background-color: var(--bgGrey);
+}
+
+main > .container:first-child {
+    padding: 1rem 2rem;
+    ;
+}
+
+main > .container:first-child > .row > .col-12.bgGrey {
+    background-color: #2e2f325e;
+}
+
+main > .container:first-child > .row a {
+    background-color: #052555c1;
+    padding: 0.7em 1.5em;
+    border-radius: 1rem;
+}
+
+#sweatcupSec {
+    text-align: left;
+    margin-top: 2rem;
+}
+
+#inviteFriendSec > div > div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#inviteFriendSec > div > div h4 {
+    padding: .5rem 0;
+}
+
+/******** FOOTER STYLE ********/
+footer {
+    padding: 1rem 3rem;
+    position: fixed;
+    bottom: 0;
+    z-index: 1;
+    width: 100%;
+}
+
+footer .row {
+    background-color: var(--bgBlue);
+}
+
+footer i {
+    font-size: 1.5rem;
+}
+
+/****************************************/
+/*********** LAYOUTING SYSTEM ***********/
+
+.col-1  {flex-basis: calc((100% / 12) *  1); max-width: calc((100% / 12) *  1);}
+.col-2  {flex-basis: calc((100% / 12) *  2); max-width: calc((100% / 12) *  2);}
+.col-3  {flex-basis: calc((100% / 12) *  3); max-width: calc((100% / 12) *  3);}
+.col-4  {flex-basis: calc((100% / 12) *  4); max-width: calc((100% / 12) *  4);}
+.col-5  {flex-basis: calc((100% / 12) *  5); max-width: calc((100% / 12) *  5);}
+.col-6  {flex-basis: calc((100% / 12) *  6); max-width: calc((100% / 12) *  6);}
+.col-7  {flex-basis: calc((100% / 12) *  7); max-width: calc((100% / 12) *  7);}
+.col-8  {flex-basis: calc((100% / 12) *  8); max-width: calc((100% / 12) *  8);}
+.col-9  {flex-basis: calc((100% / 12) *  9); max-width: calc((100% / 12) *  9);}
+.col-10 {flex-basis: calc((100% / 12) * 10); max-width: calc((100% / 12) * 10);}
+.col-11 {flex-basis: calc((100% / 12) * 11); max-width: calc((100% / 12) * 11);}
+.col-12 {flex-basis: calc((100% / 12) * 12); max-width: calc((100% / 12) * 12);}
+
+.col-offset-1  {margin-left: calc((100% / 12) *   1);}
+.col-offset-2  {margin-left: calc((100% / 12) *   2);}
+.col-offset-3  {margin-left: calc((100% / 12) *   3);}
+.col-offset-4  {margin-left: calc((100% / 12) *   4);}
+.col-offset-5  {margin-left: calc((100% / 12) *   5);}
+.col-offset-6  {margin-left: calc((100% / 12) *   6);}
+.col-offset-7  {margin-left: calc((100% / 12) *   7);}
+.col-offset-8  {margin-left: calc((100% / 12) *   8);}
+.col-offset-9  {margin-left: calc((100% / 12) *   9);}
+.col-offset-10 {margin-left: calc((100% / 12) *  10);}
+.col-offset-11 {margin-left: calc((100% / 12) *  11);}
+.col-offset-12 {margin-left: calc((100% / 12) *  12);}
