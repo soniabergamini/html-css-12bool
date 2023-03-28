@@ -32,6 +32,7 @@
 .txtWhite       {color: white;}
 .txtGrey        {color: lightgray;}
 .txtBlack       {color: black;}
+.txtFucsia      {color: var(--bgFucsia);}
 .txtSmall       {font-size: small;}
 .txtLarge       {font-size: large;}
 .txtUnderline   {text-decoration: underline;}
@@ -48,8 +49,7 @@
 .boxShadow      {box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.2);}
 .bgBlack        {background-color: black;}
 .bgBlue         {background-color: var(--blueBG);}
-.bgDarkblue     {background-color: var(--darkblueBG);}
-.bgGrey         {background-color: var(--greyBG);}
+.bgFucsia       {background-color: var(--bgFucsia);}
 .bgWhite        {background-color: white;}
 
 /********************************************
@@ -88,7 +88,6 @@
 .boxShadowHov:hover      {box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.2);}
 .txtUnderHov:hover       {text-decoration: underline;}
 .changeColWhiteHov:hover {color: white;}
-.changeColGreenHov:hover {color: var(--green);}
 .txtUnderUpperHov:hover  {
     text-decoration: underline;
     text-transform: uppercase;

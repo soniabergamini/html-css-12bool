@@ -1,11 +1,9 @@
-/* Questo Piccolo Progetto riproduce alcune elementi della homepage di Sweatcoin App. Il Layout è stato creato solo per una visualizzazione Mobile */
-
 /****************************************/
 /*********** GENERAL STYLE ***********/
-
 :root {
     --bgGrey: #2E2F32;
     --bgBlue: #052555;
+    --bgFucsia: #DB55A6;
     --padBox: 1em;
 }
 
@@ -30,7 +28,7 @@ a {
 /******** HEADER STYLE ********/
 header {
     background-color: #09080f;
-    padding: 2rem .5rem 0;
+    padding: 0 .5rem;
     position: sticky;
     top: 0;
     z-index: 1;
@@ -44,6 +42,11 @@ header img {
 header i,
 header span:nth-child(3) {
     font-size: .75rem;
+}
+
+header section {
+    color: white;
+    display: none;
 }
 
 /******** MAIN STYLE ********/
@@ -61,7 +64,6 @@ main {
     display: flex;
     flex-wrap: wrap;
     padding: var(--padBox);
-    margin: 0.8rem 0;
 }
 
 .container > .row div {
@@ -96,8 +98,18 @@ main > .container:first-child > .row > .col-12.bgGrey {
 
 main > .container:first-child > .row a {
     background-color: #052555c1;
+}
+
+main button, 
+main a:not(#dailyBoostSec a) {
     padding: 0.7em 1.5em;
     border-radius: 1rem;
+    border: 1px solid transparent;
+    color: white;
+}
+
+h3, h4, h5 {
+    padding: .5rem 0;
 }
 
 #sweatcupSec {
@@ -108,11 +120,39 @@ main > .container:first-child > .row a {
 #inviteFriendSec > div > div img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
 }
 
-#inviteFriendSec > div > div h4 {
-    padding: .5rem 0;
+#dailyRewardsSec div > i {
+    font-size: 3rem;
+}
+
+#dailyRewardsSec button:first-child ,
+.rewardBox:not(:nth-child(3)) {
+    background-color: #52545a;
+}
+
+.rewardBox button ,
+#eventSec button {
+    color: black;
+    font-size: x-small;
+    padding: 0.3em 1em;
+}
+
+.rewardBox:nth-child(3) {
+background: rgb(29, 39, 55);
+background: linear-gradient(137deg, rgba(29, 39, 55, 1) 0%, rgba(48, 130, 146, 1) 55%);
+}
+
+#eventSec > div > div:last-child {
+    background: url(../img/sweatcoin-app-futuro-farvi-pagare-tasse-camminando-v4-319381-1280x960.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 45%;
+    border-radius: 50%;
+}
+
+#dailyBoostSec {
+    margin-bottom: 7rem;
 }
 
 /******** FOOTER STYLE ********/
@@ -129,7 +169,7 @@ footer .row {
 }
 
 footer i {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
 /****************************************/
@@ -148,7 +188,7 @@ footer i {
 .col-11 {flex-basis: calc((100% / 12) * 11); max-width: calc((100% / 12) * 11);}
 .col-12 {flex-basis: calc((100% / 12) * 12); max-width: calc((100% / 12) * 12);}
 
-.col-offset-1  {margin-left: calc((100% / 12) *   1);}
+/* .col-offset-1  {margin-left: calc((100% / 12) *   1);}
 .col-offset-2  {margin-left: calc((100% / 12) *   2);}
 .col-offset-3  {margin-left: calc((100% / 12) *   3);}
 .col-offset-4  {margin-left: calc((100% / 12) *   4);}
@@ -159,4 +199,22 @@ footer i {
 .col-offset-9  {margin-left: calc((100% / 12) *   9);}
 .col-offset-10 {margin-left: calc((100% / 12) *  10);}
 .col-offset-11 {margin-left: calc((100% / 12) *  11);}
-.col-offset-12 {margin-left: calc((100% / 12) *  12);}
+.col-offset-12 {margin-left: calc((100% / 12) *  12);} */
+
+/***********************************************/
+/********** LAYOUT: SMALL, MEDIUM AND LARGE ***********/
+@media screen and (min-width: 458px) {
+    body {
+        background: rgb(29, 39, 55);
+        background: linear-gradient(137deg, rgba(29, 39, 55, 1) 0%, rgba(48, 130, 146, 1) 55%);
+    }
+    header > div, main, footer {
+        visibility: hidden;
+    }
+    header section {
+        display: block;
+    }
+    header {
+        background-color: transparent;
+    }
+}

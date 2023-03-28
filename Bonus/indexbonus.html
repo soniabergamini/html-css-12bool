@@ -18,6 +18,9 @@
 </head>
 <body>
     <header>
+        <section class="txtAlignCtr">
+            <h2>View this page in Mobile Size, please <i class="fa-regular fa-face-smile"></i></h2>
+        </section>
         <div class="container">
             <div class="row">
                 <div class="col-6">
@@ -55,7 +58,7 @@
             <div id="inviteFriendSec" class="row">
                 <div class="col-12 bgGrey row borderRadius">
                     <div class="col-4">
-                        <img src="./Risorse/img/kisspng-gift-decorative-box-clip-art-giftbox-5abf55a11ca971.9369300115224887371174.jpg" class="txtVertAlignMid">
+                        <img src="./Risorse/img/gift.png" class="txtVertAlignMid">
                     </div>
                     <div class="col-8">
                         <small class="txtGrey">Invite and win BIG!</small>
@@ -64,32 +67,57 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-12 bgGrey borderRadius">Invite a friend, get 5 sweatcoin</div>
+                <div class="col-12 bgGrey borderRadius flex spaceBtw alignCtr">
+                    <h3>Invite a friend, get 5 sweatcoins!</h3>
+                    <button class="bgFucsia"><strong>Get €5 now</strong></button>
+                </div>
             </div>
             <!-- Daily Rewards Sec -->
-            <div class="row">
+            <div id="dailyRewardsSec" class="row">
                 <div class="col-12 row bgGrey borderRadius">
-                    <div class="col-10">Daily Rewards</div>
-                    <div class="col-2">0/3 rewards</div>
-                    <div class="col-4">Claim your rewards</div>
-                    <div class="col-4">Claim your rewards</div>
-                    <div class="col-4">Claim your rewards</div>
+                    <div class="col-8">
+                        <h3>Daily Rewards</h3>
+                        <small>Try your luck and win rewards from 0.1 to 1000 sweatcoins</small>
+                    </div>
+                    <div class="col-4">
+                        <button>0/3</button>
+                    </div>
+                    <div class="col-4 rewardBox txtAlignCtr borderRadius">
+                        <i class="fa-solid fa-gifts"></i>
+                        <h5>Sweatcoin unlocked</h5>
+                        <button class="bgWhite"><i class="fa-solid fa-circle-play"></i> Claim</button>
+                    </div>
+                    <div class="col-4 rewardBox txtAlignCtr borderRadius">
+                        <i class="fa-solid fa-lock txtGrey"></i>
+                        <h5>Claim the 1st reward to unlock this one</h5>
+                    </div>
+                    <div class="col-4 rewardBox txtAlignCtr borderRadius">
+                        <i class="fa-solid fa-lock txtGrey"></i>
+                        <h5>Claim the 2st reward to unlock this one</h5>
+                    </div>
+                    <div class="col-12 txtAlignCtr ">
+                        <small class="txtGrey">Ads keep Sweatcoin free - thanks for supporting the community</small>
+                    </div>
                 </div>
             </div>
             <!-- Event Sec -->
-            <div class="row">
+            <div id="eventSec" class="row">
                 <div class="col-12 row bgGrey borderRadius">
-                    <div class="col-10">Event Name > Celebrate with a limited edition app icon</div>
-                    <div class="col-2">Img</div>
+                    <div class="col-8">
+                        <h3>Event Name</h3>
+                        <small>Celebrate with a limited edition app icon</small>
+                        </div>
+                    <div class="col-4"></div>
                 </div>
             </div>
             <!-- Daily Boost Sec -->
-            <div class="row">
+            <div id="dailyBoostSec" class="row">
                 <div class="col-12 row bgGrey borderRadius">
-                    <h4>Daily 2x Boost</h4>
-                    <p>description</p>
-                    <p>Immagine here</p>
-                    <button>Open 2x Boost</button>
+                    <h3>Daily 2x Boost</h3>
+                    <small>Earn double sweatcoins for your steps for 20 minutes of waliking.</small>
+                    <a href="#" class="borderRadius">
+                     <img src="./Risorse/img/boost.png" alt="boost-img" class="wid100Perc borderRadius">
+                    </a>
                 </div>
             </div>
         </div>
@@ -98,7 +126,7 @@
         <div class="container">
             <div class="row borderRadius3 txtAlignCtr txtWhite">
                 <div class="col-3">
-                    <a href="#"><i class="fa-solid fa-house"></i></a>
+                    <a href="#"><i class="fa-solid fa-house txtFucsia"></i></a>
                 </div>
                 <div class="col-3">
                     <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
