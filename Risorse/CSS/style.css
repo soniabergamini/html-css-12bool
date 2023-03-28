@@ -19,13 +19,13 @@ body {
 .container {
     max-width: 75rem;
     margin: 0 auto;
-    border: 1px solid green;
+    /* border: 1px solid green; */
 }
 
 .row {
     display: flex;
     flex-wrap: wrap;
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
 }
 
 .container > .row div {
@@ -42,7 +42,6 @@ body {
 .container > .row > div > div {
     background-color: var(--bgGreen);
 }
-
 
 
 [class*="col-"] {
