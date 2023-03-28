@@ -1,3 +1,5 @@
+/* Questo Piccolo Progetto riproduce alcune elementi della homepage di Sweatcoin App. Il Layout è stato creato solo per una visualizzazione Mobile */
+
 /****************************************/
 /*********** GENERAL STYLE ***********/
 
@@ -46,7 +48,6 @@ header span:nth-child(3) {
 
 /******** MAIN STYLE ********/
 main {
-    height: 100vh;
     width: 100vw;
     padding: var(--padBox);
 }
